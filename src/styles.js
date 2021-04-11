@@ -14,6 +14,7 @@ export const Description = styled.div`
 `
 export const Image = styled.div`
   flex: 1;
+  overflow: hidden;
   img {
     width: 100%;
     height: 80vh;
