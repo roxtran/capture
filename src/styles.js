@@ -10,10 +10,12 @@ export const About = styled.div`
 `
 export const Description = styled.div`
   flex: 1;
+  z-index: 2;
   padding-right: 5rem;
 `
 export const Image = styled.div`
   flex: 1;
+  z-index: 2;
   overflow: hidden;
   img {
     width: 100%;
