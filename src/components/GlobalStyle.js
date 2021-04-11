@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 
   button {
@@ -34,7 +35,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    color: white;
+    font-weight: normal;
+    font-size: 3rem;
   }
 
   h4 {

@@ -28,28 +28,28 @@ const ServicesSection = () => {
           <Card>
             <div className='icon'>
               <img src={clock} alt='clock' />
-              <h3>Efficient</h3>
+              <h4>Efficient</h4>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className='icon'>
               <img src={teamwork} alt='teamwork' />
-              <h3>Teamwork</h3>
+              <h4>Teamwork</h4>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className='icon'>
               <img src={diaphragm} alt='diaphragm' />
-              <h3>Diaphragm</h3>
+              <h4>Diaphragm</h4>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className='icon'>
               <img src={money} alt='money' />
-              <h3>Affordable</h3>
+              <h4>Affordable</h4>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
@@ -81,7 +81,8 @@ const Card = styled.div`
   .icon {
     display: flex;
     align-items: center;
-    h3 {
+    h4 {
+      font-size: 1.2rem;
       margin-left: 1rem;
       background: white;
       color: black;

@@ -20,19 +20,19 @@ const ContactUs = () => {
       <div className='hide'>
         <Social variants={titleAnimation}>
           <Circle />
-          <h2>Send us a message</h2>
+          <h3>Send us a message</h3>
         </Social>
       </div>
       <div className='hide'>
         <Social variants={titleAnimation}>
           <Circle />
-          <h2>Send us an email</h2>
+          <h3>Send us an email</h3>
         </Social>
       </div>
       <div className='hide'>
         <Social variants={titleAnimation}>
           <Circle />
-          <h2>Social media</h2>
+          <h3>Social media</h3>
         </Social>
       </div>
     </StyledContact>
@@ -52,7 +52,7 @@ const Title = styled.div`
 const Social = styled(motion.div)`
   display: flex;
   align-items: center;
-  h2 {
+  h3 {
     margin: 2rem;
     &:hover {
       cursor: pointer;
@@ -62,8 +62,8 @@ const Social = styled(motion.div)`
 `
 const Circle = styled.div`
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background: #353535;
 `
 

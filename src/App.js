@@ -9,27 +9,21 @@ import MovieDetail from './pages/MovieDetail'
 import { Switch, Route, useLocation } from 'react-router-dom'
 // Animation
 import { AnimatePresence } from 'framer-motion'
+import ScrollTop from './components/ScrollTop'
 
 function App() {
   const location = useLocation()
   return (
     <div className='App'>
       <GlobalStyle />
+      <ScrollTop />
       <Nav />
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
-          <Route path='/' exact>
-            <AboutUs />
-          </Route>
-          <Route path='/work' exact>
-            <OurWork />
-          </Route>
-          <Route path='/work/:id'>
-            <MovieDetail />
-          </Route>
-          <Route path='/contact'>
-            <ContactUs />
-          </Route>
+          <Route path='/' exact component={AboutUs} />
+          <Route path='/work' exact component={OurWork} />
+          <Route path='/work/:id' component={MovieDetail} />
+          <Route path='/contact' component={ContactUs} />
         </Switch>
       </AnimatePresence>
     </div>
