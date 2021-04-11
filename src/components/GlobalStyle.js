@@ -57,6 +57,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.4rem;
     line-height: 150%;
   }
+
+  .hide {
+    overflow: hidden;
+  }
 `
 
 export default GlobalStyle

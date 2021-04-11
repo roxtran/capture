@@ -16,13 +16,9 @@ export const Description = styled.div`
 export const Image = styled.div`
   flex: 1;
   z-index: 2;
-  overflow: hidden;
   img {
     width: 100%;
     height: 80vh;
     object-fit: cover;
   }
-`
-export const Hide = styled.div`
-  overflow: hidden;
 `

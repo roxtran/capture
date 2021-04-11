@@ -1,7 +1,7 @@
 import React from 'react'
 import home1 from '../img/home1.png'
 // Styled
-import { About, Description, Image, Hide } from '../styles'
+import { About, Description, Image } from '../styles'
 // Framer Motion
 import { motion } from 'framer-motion'
 import { titleAnimation, fade, photoAnimation } from '../animation'
@@ -12,17 +12,17 @@ const AboutSection = () => {
     <About>
       <Description>
         <motion.div>
-          <Hide>
+          <div className='hide'>
             <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
-          </Hide>
-          <Hide>
+          </div>
+          <div className='hide'>
             <motion.h2 variants={titleAnimation}>
               your <span>dreams</span> come
             </motion.h2>
-          </Hide>
-          <Hide>
+          </div>
+          <div className='hide'>
             <motion.h2 variants={titleAnimation}>true.</motion.h2>
-          </Hide>
+          </div>
         </motion.div>
         <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have. We
@@ -30,7 +30,7 @@ const AboutSection = () => {
         </motion.p>
         <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
-      <Image>
+      <Image className='hide'>
         <motion.img
           variants={photoAnimation}
           src={home1}
