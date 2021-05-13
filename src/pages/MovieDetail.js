@@ -9,14 +9,14 @@ import { pageAnimation } from '../animation'
 const MovieDetail = () => {
   const history = useHistory()
   const url = history.location.pathname
-  console.log(url)
+  console.log(url) // eslint-disable-next-line
   const [movies, setMovies] = useState(MovieState)
   const [movie, setMovie] = useState(null)
 
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url)
     setMovie(currentMovie[0])
-    console.log(movie)
+    console.log(movie) // eslint-disable-next-line
   }, [movies, url])
 
   return (
